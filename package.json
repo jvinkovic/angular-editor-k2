@@ -1,7 +1,8 @@
 {
-  "name": "@jovipv/angular-editor-k2",
+  "name": "@josipv/angular-editor-k2",
   "version": "3.1.0",
   "description": "fixed version of @kolkov/angular-editor",
+  "repository": "https://github.com/jvinkovic/angular-editor-k2",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -21,6 +22,9 @@
     "test-ci": "ng test angular-editor --code-coverage --no-watch --browsers=ChromeHeadless && cat ./coverage/angular-editor/lcov.info | coveralls"
   },
   "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@angular/animations": "^13",
     "@angular/common": "^13",
