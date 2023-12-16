@@ -1,6 +1,6 @@
 {
   "name": "@josipv/angular-editor-k2",
-  "version": "2.2.0",
+  "version": "2.20.0",
   "description": "A simple native WYSIWYG editor for Angular 8+, 12+. Rich Text editor component for Angular. @kolkov/angular-editor",
   "author": "Josip Vinkovic <josipv001@gmail.com>",
   "repository": "https://github.com/jvinkovic/angular-editor-k2",
