@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AngularEditorConfig } from 'angular-editor';
 
-const ANGULAR_EDITOR_LOGO_URL = 'https://raw.githubusercontent.com/kolkov/angular-editor/master/docs/angular-editor-logo.png?raw=true'
+const ANGULAR_EDITOR_LOGO_URL = 'https://raw.githubusercontent.com/jvinkovic/angular-editor-k2/master/docs/angular-editor-logo.png?raw=true'
 
 @Component({
   selector: 'app-root',

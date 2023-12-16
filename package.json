@@ -1,6 +1,7 @@
 {
-  "name": "@kolkov/angular-editor",
-  "version": "3.0.0-beta.0",
+  "name": "@jovipv/angular-editor-k2",
+  "version": "3.1.0",
+  "description": "fixed version of @kolkov/angular-editor",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
