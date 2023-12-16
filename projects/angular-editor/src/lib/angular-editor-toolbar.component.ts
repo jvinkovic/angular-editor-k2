@@ -1,12 +1,11 @@
 import {
   Component,
-  ContentChild,
   ElementRef,
   EventEmitter,
   Inject,
   Input,
   Output,
-  Renderer2, TemplateRef,
+  Renderer2,
   ViewChild
 } from '@angular/core';
 import {AngularEditorService, UploadResponse} from './angular-editor.service';
