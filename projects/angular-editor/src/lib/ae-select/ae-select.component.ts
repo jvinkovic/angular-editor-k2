@@ -1,4 +1,5 @@
 import {
+  Attribute,
   Component,
   ElementRef,
   EventEmitter,

@@ -1,16 +1,15 @@
 <p align="center">
-  <img width="150px" src="https://raw.githubusercontent.com/josipv/angular-editor/master/docs/angular-editor-logo.png?raw=true" alt="AngularEditor logo"/>
+  <img width="150px" src="https://raw.githubusercontent.com/jvinkovic/angular-editor-k2/master/docs/angular-editor-logo.png?raw=true" alt="AngularEditor logo"/>
 </p>
 
 # AngularEditor
-[![npm version](https://badge.fury.io/js/%40josipv%2Fangular-editor-k2.svg)](https://badge.fury.io/js/%40josipv%2Fangular-editor-k2)
+[![npm version](https://badge.fury.io/js/%40kolkov%2Fangular-editor-k2.svg)](https://badge.fury.io/js/%40kolkov%2Fangular-editor-k2)
 [![demo](https://img.shields.io/badge/demo-StackBlitz-blueviolet.svg)](https://stackblitz.com/edit/angular-editor-wysiwyg)
-[![npm](https://img.shields.io/npm/dm/@josipv/angular-editor-k2.svg)](https://www.npmjs.com/package/@josipv/angular-editor-k2)
-[![](https://data.jsdelivr.com/v1/package/npm/@josipv/angular-editor-k2/badge?style=rounded)](https://www.jsdelivr.com/package/npm/@josipv/angular-editor-k2)
-[![Coverage Status](https://coveralls.io/repos/github/josipv/angular-editor-k2/badge.svg?branch=master)](https://coveralls.io/github/josipv/angular-editor-k2?branch=master)
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/josipv)
+[![npm](https://img.shields.io/npm/dm/@josipv/angular-editor.svg)](https://www.npmjs.com/package/@josipv/angular-editor)
+[![](https://data.jsdelivr.com/v1/package/npm/@josipv/angular-editor/badge?style=rounded)](https://www.jsdelivr.com/package/npm/@josipv/angular-editor-k2)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/excrucio)
 
-A simple native WYSIWYG/Rich Text editor for Angular 6-14+
+A simple native WYSIWYG/Rich Text editor for Angular 6-12+
 
 ![Nov-27-2019 17-26-29](https://user-images.githubusercontent.com/216412/69763434-259cd800-113b-11ea-918f-0565ebce0e48.gif)
 
@@ -29,8 +28,6 @@ npm install @josipv/angular-editor-k2 --save
 ```
 ### Versions
 
-2.0.0 and above - for Angular v13.0.0 and above
-
 1.0.0 and above - for Angular v8.x.x and above
 
 0.18.4 and above - for Angular v7.x.x
@@ -39,7 +36,7 @@ npm install @josipv/angular-editor-k2 --save
 
 ### Usage
 
-Import `angular-editor` module
+Import `angular-editor-k2` module
 
 ```js
 import { HttpClientModule} from '@angular/common/http';
@@ -90,6 +87,9 @@ editorConfig: AngularEditorConfig = {
       defaultParagraphSeparator: '',
       defaultFontName: '',
       defaultFontSize: '',
+      headers: [{
+
+      }],
       fonts: [
         {class: 'arial', name: 'Arial'},
         {class: 'times-new-roman', name: 'Times New Roman'},
@@ -124,32 +124,6 @@ editorConfig: AngularEditorConfig = {
 ```
 For `ngModel` to work, you must import `FormsModule` from `@angular/forms`, or for `formControlName`, you must import `ReactiveFormsModule` from `@angular/forms`
 
-To serve the fontawesome files, ensure that your angular.json contains the following asset configuration:
-
-```
-{
-  "glob": "**/*",
-  "input": "./node_modules/@josipv/angular-editor-k2/assets/",
-  "output": "./assets/fonts/"
-}
-```
-
-### Custom buttons
-
-You can define your custom buttons with custom actions using executeCommandFn. It accepts commands from [execCommand](https://developer.mozilla.org/en-US/docs/Web/API/Document/execCommand).
-The first argument of this method is aCommandName and the second argument is aValueArgument. Example shows a button that adds Angular editor logo into the editor.
-```html
-<angular-editor id="editor1" formControlName="htmlContent1" [config]="editorConfig">
-  <ng-template #customButtons let-executeCommandFn="executeCommandFn">
-    <ae-toolbar-set>
-      <ae-button iconClass="fa fa-html5" title="Angular editor logo"
-                 (buttonClick)="executeCommandFn('insertHtml', angularEditorLogo)">
-      </ae-button>
-    </ae-toolbar-set>
-  </ng-template>
-</angular-editor>
-```
-
 ## API
 ### Inputs
 | Input  | Type | Default | Required | Description |
@@ -157,7 +131,7 @@ The first argument of this method is aCommandName and the second argument is aVa
 | id | `string` | `-` | no | Id property when multiple editor used on same page |
 | [config] | `AngularEditorConfig` | `default config` | no | config for the editor |
 | placeholder | `string` | `-` | no | Set custom placeholder for input area |
-| tabIndex | `number` | `-` | no | Set Set tabindex on angular-editor |
+| tabIndex | `number` | `-` | no | Set Set tabindex on angular-editor-k2 |
 
 ### Outputs
 
@@ -184,7 +158,7 @@ The first argument of this method is aCommandName and the second argument is aVa
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | editable  | `bolean` | `true` | no | Set editing enabled or not |
 | spellcheck  | `bolean` | `true` | no | Set spellchecking enabled or not |
-| translate  | `string` | `yes` | no | Set translating enabled or not |
+| translate  | `sting` | `yes` | no | Set translating enabled or not |
 | sanitize  | `bolean` | `true` | no | Set DOM sanitizing enabled or not |
 | height  | `string` | `auto` | no | Set height of the editor |
 | minHeight  | `string` | `0` | no | Set minimum height of the editor |
@@ -249,7 +223,7 @@ toolbarHiddenButtons: [
 Within the download you'll find the following directories and files. You'll see something like this:
 
 ```
-angular-editor/
+angular-editor-k2/
 └── projects/
     ├── angular-editor/
     └── angular-editor-app/
@@ -258,31 +232,28 @@ angular-editor/
 
 `angular-editor-app/` - demo application
 
-## Documentation
-
-The documentation for the AngularEditor is hosted at our website [AngularEditor](https://angular-editor.josipv.ru/)
 
 ## Contributing
 
-Please read through our [contributing guidelines](https://github.com/josipv/angular-editor/blob/master/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
+Please read through our [contributing guidelines](https://github.com/jvinkovic/angular-editor-k2/blob/master/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
 
-Editor preferences are available in the [editor config](https://github.com/josipv/angular-editor/blob/master/.editorconfig) for easy use in common text editors. Read more and download plugins at <http://editorconfig.org>.
+Editor preferences are available in the [editor config](https://github.com/jvinkovic/angular-editor-k2/blob/master/.editorconfig) for easy use in common text editors. Read more and download plugins at <http://editorconfig.org>.
 
 ## Versioning
 
 For a transparency into our release cycle and in striving to maintain backward compatibility, AngularEditor is maintained under [the Semantic Versioning guidelines](http://semver.org/).
 
-See [the Releases section of our project](https://github.com/josipv/angular-editor/releases) for changelogs for each release version.
+See [the Releases section of our project](https://github.com/jvinkovic/angular-editor-k2/releases) for changelogs for each release version.
 
 ## Creators
 
-**Andrey josipv**
+**Josip Vinkovic**
 
-* <https://github.com/josipv>
+* <https://github.com/jvinkovic>
 
 ## Donate
 
-If you like my work and I save your time you can buy me a :beer: or :pizza: [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/josipv)
+If you like my work and I save your time you can buy me a :beer: or :pizza: [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/excrucio)
 
 [npm]: https://www.npmjs.com/package/@josipv/angular-editor-k2
 [demo]: https://angular-editor-wysiwyg.stackblitz.io/

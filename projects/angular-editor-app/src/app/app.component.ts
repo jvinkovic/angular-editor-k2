@@ -1,8 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { AngularEditorConfig } from 'angular-editor';
-
-const ANGULAR_EDITOR_LOGO_URL = 'https://raw.githubusercontent.com/jvinkovic/angular-editor-k2/master/docs/angular-editor-logo.png?raw=true'
+import {Component, OnInit} from '@angular/core';
+import {AngularEditorConfig} from 'angular-editor';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -16,7 +14,6 @@ export class AppComponent implements OnInit {
 
   htmlContent1 = '';
   htmlContent2 = '';
-  angularEditorLogo = `<img alt="angular editor logo" src="${ANGULAR_EDITOR_LOGO_URL}">`;
 
   config1: AngularEditorConfig = {
     editable: true,

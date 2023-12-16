@@ -12,7 +12,7 @@ before_install:
 install:
   - npm install
 before_script:
-  - npm install -g @angular/cli@13
+  - npm install -g @angular/cli
   - npm install -g codecov
 script:
   - npm run lint:lib
@@ -33,4 +33,4 @@ deploy:
   edge: true
   on:
     tags: true
-    repo: jvinkovic/angular-editor-k2
+    repo: jvinkovic/angular-editor

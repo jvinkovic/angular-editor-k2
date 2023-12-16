@@ -24,14 +24,28 @@ Please keep in mind that the issue tracker is for *issues*. Please do *not* post
 
 # Contribute
 
+**(1)** See the **[Developing](#developing)** section below, to get the development version of AngularEditor up and running on your local machine.
+
+**(2)** Check out the [roadmap](https://github.com/jvinkovic/angular-editor-k2milestones) to see where the project is headed, and if your feature idea fits with where we're headed.
+
+**(3)** If you're not sure, [open an RFC](https://github.com/jvinkovic/angular-editor-k2/issues/new?title=RFC:%20My%20idea) to get some feedback on your idea.
+
+**(4)** Finally, commit some code and open a pull request. Code & commits should abide by the following rules:
+
+- *Always* have test coverage for new features (or regression tests for bug fixes), and *never* break existing tests
+- Commits should represent one logical change each; if a feature goes through multiple iterations, squash your commits down to one
+- Make sure to follow the [Angular commit message format](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#commit-message-format) so your change will appear in the changelog of the next release.
+- Changes should always respect the coding style of the project
+
+
 
 # Developing
 
-`angular-editor` uses <code>Angular cli</code>, <code>npm</code> and <code>webpack</code>.
+`angular-editor-k2` uses <code>Angular cli</code>, <code>npm</code> and <code>webpack</code>.
 
 ## Fetch the source code
 
-The code for `angular-editor` is :
+The code for `angular-editor-k2` is :
 
 * [AngularEditor](https://github.com/jvinkovic/angular-editor-k2) (`@josipv/angular-editor-k2` on npm)
 
@@ -51,7 +65,6 @@ Use `npm` to install the development dependencies for the repository.
 cd angular-editor
 npm install
 ```
-
 
 ## Develop
 

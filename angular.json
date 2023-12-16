@@ -66,12 +66,7 @@
             "tsConfig": "projects/angular-editor-app/tsconfig.app.json",
             "assets": [
               "projects/angular-editor-app/src/favicon.ico",
-              "projects/angular-editor-app/src/assets",
-              {
-                "glob": "**/*",
-                "input": "node_modules/font-awesome/fonts",
-                "output": "assets/fonts/"
-              }
+              "projects/angular-editor-app/src/assets"
             ],
             "styles": [
               "projects/angular-editor-app/src/styles.scss"
@@ -171,10 +166,9 @@
       }
     }
   },
+  "defaultProject": "angular-editor-app",
   "cli": {
     "analytics": "fbddda2f-258b-4004-8062-d701809d0a1c",
-    "schematicCollections": [
-      "@angular-eslint/schematics"
-    ]
+    "defaultCollection": "@angular-eslint/schematics"
   }
 }
