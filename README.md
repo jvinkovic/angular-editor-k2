@@ -282,7 +282,7 @@ See [the Releases section of our project](https://github.com/josipv/angular-edit
 
 ## Donate
 
-If you like my work and I save your time you can buy me a :beer: or :pizza: [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/Andreyjosipv)
+If you like my work and I save your time you can buy me a :beer: or :pizza: [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/josipv)
 
 [npm]: https://www.npmjs.com/package/@josipv/angular-editor-k2
 [demo]: https://angular-editor-wysiwyg.stackblitz.io/
