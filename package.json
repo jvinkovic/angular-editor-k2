@@ -20,7 +20,7 @@
     "copy:license": "cpx LICENSE dist/angular-editor",
     "test-ci": "ng test angular-editor --code-coverage --no-watch --browsers=ChromeHeadless && cat ./coverage/angular-editor/lcov.info | coveralls"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "^13",
     "@angular/common": "^13",
