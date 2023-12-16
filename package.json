@@ -1,6 +1,6 @@
 {
   "name": "@josipv/angular-editor-k2",
-  "version": "3.1.0",
+  "version": "3.1.2",
   "description": "fixed version of @kolkov/angular-editor",
   "repository": "https://github.com/jvinkovic/angular-editor-k2",
   "scripts": {
