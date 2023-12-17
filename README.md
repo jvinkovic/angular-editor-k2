@@ -28,11 +28,9 @@ npm install @josipv/angular-editor-k2 --save
 ```
 ### Versions
 
-1.0.0 and above - for Angular v8.x.x and above
+3.2.1 and above - for Angular v14+
 
-0.18.4 and above - for Angular v7.x.x
-
-0.15.x - for Angular v6.x.x 
+2.20.0 and above - for Angular v8-v14
 
 ### Usage
 
